@@ -1,0 +1,68 @@
+[
+  {
+  "id": "corythrigon",
+  "name": "Corythrigon",
+  "moniker": "The Scourge",
+  "category": "Creature",
+  "summary": "A serpentine pack predator with multiple spiked tails and a dual skeleton.",
+  "size": "20–30 ft",
+  "habitat": "Underground dimly lit caves",
+  "tags": ["serpentine", "pack", "alpha", "regrowth"],
+  "content": "<h1>Corythrigon — <em>The Scourge</em></h1><p><strong>Category:</strong> Creature</p><p><strong>Size:</strong> 20–30 feet</p><p><strong>Habitat:</strong> Underground, dimly lit caves. Lives in packs rather than solitary ambush or stealth.</p><h2>Description</h2><p>The Corythrigon is a serpentine beast with a singular head and multiple powerful tails (commonly 5–6) armed with prongs and spikes. Its name derives from the words <em>Coryth</em>, meaning 'helmet' or 'armored', and <em>rigon</em>, meaning 'drizzle'—a nod to the violent whipping action of its tails, as if the prey is being 'drizzled by whips'. Unlike most snakes, it possesses a rare dual skeleton—an internal bone structure and an external exoskeletal ridge system that provides added durability.</p><h2>Behavior</h2><p>Packs are alpha-led; the alpha is larger with more tails. They don’t ambush indiscriminately — they hunt selectively when motivated. Packs often erupt into violent fights over food. Adults sharpen tails by slamming them against rockfaces and chip stones build nesting material.</p><h2>Abilities & Notes</h2><ul><li>Tails used for constriction and whipping; can rip through metal and tear a car in half in mythic accounts.</li><li>Tail spikes regrow over time like fingernails; lost tails do not regenerate.</li><li>Related conceptually to <a href=\"https://en.wikipedia.org/wiki/Lernaean_Hydra\">hydra</a>/<a href=\"https://en.wikipedia.org/wiki/Anaconda\">anaconda</a> but diverges in social behavior and habitat.</li></ul>"
+},
+  {
+    "id": "zorvathos",
+    "name": "Zorvathos",
+    "moniker": "Lord of Primordial Singularity",
+    "category": "Cosmic Hydra",
+    "summary": "A three-headed Hydra-dragon born from the star WR102, capable of planetary destruction.",
+    "size": "Galaxy-spanning",
+    "habitat": "Interdimensional space",
+    "tags": ["hydra", "cosmic", "deity", "destruction", "creation"],
+    "content": "<h1>Zorvathos — <em>Lord of Primordial Singularity</em></h1><p><strong>Category:</strong> Cosmic Hydra</p><p><strong>Origin:</strong> Born from the star WR102, the hottest known star in the universe.</p><h2>Description</h2><p>Zorvathos is a colossal, three-headed Hydra-dragon. Each head embodies a different aspect of his immense power, his body an ethereal mix of molten light and cosmic darkness. Wings vast enough to span entire galaxies generate immense heat waves, capable of scorching entire planets.</p><h2>Abilities</h2><ul><li><strong>Black Hole Beam:</strong> Fires a concentrated gravitational beam that can consume entire planets.</li><li><strong>Light That Burns the Sky:</strong> Radiant energy beam capable of incinerating anything in its path.</li></ul><h2>Behavior</h2><p>Embodiment of absolute power, indifferent to mortal concerns. Wing flaps generate solar winds that obliterate ecosystems. Presence distorts space-time.</p><h2>Weaknesses</h2><p>Massive energy output can leave him vulnerable; obsession with dominance can lead to reckless destruction.</p><h2>Lore</h2><p>Feared as the 'Son of WR102,' Zorvathos reshapes the cosmos at will. Entire star systems tremble at his approach; few survive an encounter.</p>"
+  },
+  {
+    "id": "xytherion",
+    "name": "Xy'therion",
+    "moniker": "The Opposite of Light",
+    "category": "Cosmic Deity",
+    "summary": "Primordial deity of darkness and entropy, born from the supermassive black hole TON618.",
+    "size": "Infinite/Dimension-spanning",
+    "habitat": "Heart of TON618, interstellar void",
+    "tags": ["void", "cosmic", "entropy", "black hole", "deity"],
+    "content": "<h1>Xy'therion — <em>The Opposite of Light</em></h1><p><strong>Category:</strong> Cosmic Deity</p><p><strong>Origin:</strong> Born from TON618, the most massive supermassive black hole known.</p><h2>Description</h2><p>Xy'therion is a primordial deity of darkness and entropy, his form an ever-shifting mass of shadow and gravity. Tendrils of shadow extend outward, with a swirling singularity at the core that devours all matter and energy.</p><h2>Abilities</h2><ul><li><strong>Event Horizon Grasp:</strong> Creates a point of no return, ensnaring entire galaxies.</li><li><strong>Void Pulse:</strong> Obliterates all in its path, warping space-time and erasing star systems.</li><li><strong>Abyssal Claws:</strong> Tear apart galaxies, siphon energy of stars and deities.</li><li><strong>Dimensional Warp:</strong> Warps through dimensions; instantaneous movement.</li><li><strong>Black Hole Singularity:</strong> Miniature singularity at core, drawing all nearby matter into nothingness.</li></ul><h2>Behavior</h2><p>Embodiment of unyielding entropy. Moves deliberately, erasing everything in his path. Patience is eternal; he does not act in haste.</p><h2>Weaknesses</h2><p>Vulnerable to immense energy sources, light, or cosmic radiation. Reliant on influx of matter and energy to sustain his singularity.</p><h2>Lore</h2><p>An ancient force, Xy'therion embodies void, gravity, and the eventual collapse of all things. His presence brings nothingness; civilizations speak of him as an agent of universal entropy.</p>"
+  },
+  {
+    "id": "zorxytheros",
+    "name": "Zor'Xytheros",
+    "moniker": "Singularity of Eternity",
+    "category": "Primordial Cosmic Deity",
+    "summary": "The ultimate fusion of creation and destruction, embodying cosmic duality.",
+    "size": "Immeasurable",
+    "habitat": "Across the multiverse",
+    "tags": ["cosmic", "deity", "creation", "destruction", "balance"],
+    "content": "<h1>Zor'Xytheros — <em>Singularity of Eternity</em></h1><p><strong>Category:</strong> Primordial Cosmic Deity</p><p><strong>Domain:</strong> Creation, Destruction, Balance</p><p><strong>Size:</strong> Immeasurable</p><h2>Description</h2><p>Zor'Xytheros is the fusion of Zorvathos and Xy'therion, embodying both stellar birth and infinite darkness. Its form is an ever-shifting paradox with four wings—two golden, birthing galaxies, and two of endless night, erasing matter and energy. Its presence strains reality, a being whose existence defines cosmic duality.</p><h2>Abilities</h2><ul><li><strong>Wings of Duality:</strong> Forward wings ignite creation; rear wings consume entire realities.</li><li><strong>Voice of the Cosmos:</strong> Reverberates through time and space, causing entire dimensions to tremble.</li><li><strong>Galactic Stride:</strong> Moves across solar systems in seconds, bending space itself.</li><li><strong>Eternal Light and Void:</strong> Commands birth, death, and rebirth of universes.</li><li><strong>Reality Shatter:</strong> Fractures reality, creating alternate dimensions or unmaking existence.</li></ul><h2>Lore</h2><p>Cosmic scholars whisper that its separation was necessary to maintain universal balance. Tales predict a future merging of Zorvathos and Xy'therion, reforming Zor'Xytheros. Its existence remains a paradox, awaiting the moment to reshape or end the cosmos.</p>"
+  },
+  {
+    "id": "abraxoth",
+    "name": "Abraxoth",
+    "moniker": "The Celestial Whale",
+    "category": "Cosmic Entity",
+    "summary": "A nomadic, peaceful cosmic whale traversing intergalactic space and the Fifth Dimension.",
+    "size": "Unknown (planetary to galactic scale)",
+    "habitat": "Intergalactic space / Fifth Dimension",
+    "tags": ["cosmic", "entity", "nomadic", "dimension", "peaceful"],
+    "content": "<h1>Abraxoth — <em>The Celestial Whale</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Domain:</strong> The Fifth Dimension / Intergalactic Space</p><p><strong>Size:</strong> Unknown (observed individuals range from planetary to galactic scale)</p><h2>Description</h2><p>Abraxoth drifts silently through the void, a colossal whale-like cosmic entity of ethereal space dust and nebulae, pulsing softly with celestial energy. It is passive, nomadic, and non-hostile, existing beyond mortal comprehension.</p><h2>Abilities & Influence</h2><ul><li><strong>Dimensional Drift:</strong> Moves partially through the Fifth Dimension, bypassing conventional space-time.</li><li><strong>Unshaken Presence:</strong> Immune to cosmic forces; black holes bend around it.</li><li><strong>Galexies:</strong> Travels in families called Galexies, presence is an omen of great fortune.</li></ul><h2>Cultural Significance</h2><ul><li><strong>The Fortune Bringers:</strong> Civilizations worship Abraxoth, predicting its path for divine favor.</li></ul>"
+  },
+  {
+  "id": "myrindyr",
+  "name": "Myrindyr",
+  "moniker": "Ophis Planivorus",
+  "category": "Cosmic Entity",
+  "summary": "A colossal planivorous serpent that drifts through space, consuming planets and metallic debris with magnetic precision.",
+  "size": "12,000 km long, 3,000 km wide",
+  "habitat": "Interstellar voids, near asteroid belts and metallic planets",
+  "tags": ["serpentine", "cosmic", "nomadic", "passive", "magnetic"],
+  "content": "<h1>Myrindyr — <em>Ophis Planivorus</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Size:</strong> 12,000 km long, 3,000 km wide</p><p><strong>Habitat:</strong> Interstellar voids, drifting near asteroid belts and metallic planets. Myrindyr is largely nomadic, moving passively through space while harvesting cosmic debris.</p><h2>Description</h2><p>Myrindyr is a serpentine cosmic entity with dark charcoal scales subtly highlighted with iridescent cobalt, emerald, and bronze tones. Its ventral side is smooth, enabling efficient guidance of smaller debris, while its beak is metallic-toned and emits a faint shimmer when activating its magnetic field. It possesses long, chisel-shaped fangs capable of breaking planetary crusts, with secondary serrated teeth for gripping smaller objects. Eyes are minimal; its primary senses detect electromagnetic and infrared signals from celestial bodies.</p><h2>Behavior</h2><p>This passive planivorous serpent does not expend energy on consuming objects it cannot easily process. When encountering large metallic planets, it uses its controllable magnetic beak to attract chunks without crushing itself. It digests planetary mass slowly, converting it into energy to sustain its immense size. Myrindyr drifts with gravitational currents, conserving energy while interacting minimally with its environment.</p><h2>Abilities & Notes</h2><ul><li>Magnetic beak can be toggled on or off to attract or release metallic objects.</li><li>Chisel-shaped fangs allow extraction of planetary chunks when full swallowing is impossible.</li><li>Scales shift subtly with starlight for camouflage in deep space.</li><li>Passive nature avoids conflict; prioritizes efficiency over predation.</li></ul>"
+}
+]
