@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geno's Mythos</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="site-title">Geno's Mythos</h1>
+    <div class="controls">
+      <input id="search" placeholder="Search entries..." aria-label="Search entries">
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="">All categories</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="main">
+    <aside class="sidebar" aria-label="Sidebar">
+      <section>
+        <h3>Index</h3>
+        <div id="alphabet" aria-hidden="false"></div>
+      </section>
+      <section>
+        <h3>Tags</h3>
+        <div id="tag-list"></div>
+      </section>
+    </aside>
+
+    <section class="content">
+      <div id="list-view" class="view">
+        <h2>Entries</h2>
+        <ul id="entry-list" aria-live="polite"></ul>
+      </div>
+
+      <div id="entry-view" class="view hidden" aria-hidden="true">
+        <button id="back-to-list">← Back</button>
+        <article id="entry-content" tabindex="0"></article>
+      </div>
+
+      <!-- About view (Markdown will be injected into #about-content) -->
+      <div id="about-view" class="view hidden" aria-hidden="true">
+        <button id="back-to-list-from-about">← Back</button>
+        <article id="about-content" tabindex="0" class="md-content">
+          <!-- Markdown will be rendered here -->
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small id="copyright"></small>
+    <!-- About link anchored bottom-right inside the footer -->
+    <a href="#/about" class="about-link" id="about-link">About Me</a>
+  </footer>
+
+  <!-- Prefer marked from a CDN for good Markdown support; fallback converter also provided in scripts.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" integrity="" crossorigin="anonymous"></script>
+  <script src="scripts.js" type="module"></script>
+</body>
+</html>
