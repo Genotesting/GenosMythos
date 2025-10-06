@@ -1,8 +1,7 @@
-const DATA_URL = '/data/entries.json';
+const DATA_URL = 'data/entries.json';
 
 let entries = [];
 
-// Small helpers
 function $(sel){ return document.querySelector(sel); }
 function $$(sel){ return Array.from(document.querySelectorAll(sel)); }
 
@@ -20,7 +19,6 @@ function init(){
   renderList();
   setupEvents();
   handleRouting();
-  // Ensure copyright reflects current year
   updateCopyright(2025);
 }
 
@@ -130,7 +128,6 @@ function renderEntry(id){
     showEntryView();
     return;
   }
-  // NOTE: e.content assumed safe (same as your original site behavior)
   $('#entry-content').innerHTML = e.content;
   const meta = document.createElement('div');
   meta.style.marginTop = '10px';
@@ -170,10 +167,6 @@ function escapeHtml(str){
   return (str || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 
-/* ------------------------------
-   About page: load markdown & render
-   ------------------------------ */
-
 async function showAboutView(){
   $('#list-view').classList.add('hidden');
   $('#entry-view').classList.add('hidden');
@@ -191,7 +184,6 @@ async function loadAboutMarkdown(url){
   if(!res.ok) throw new Error('Failed to load about.md');
   const mdText = await res.text();
 
-  // Prefer marked (if available from CDN). If not, fall back to a tiny parser.
   let html = '';
   if(window.marked && typeof window.marked.parse === 'function'){
     html = window.marked.parse(mdText);
@@ -199,15 +191,9 @@ async function loadAboutMarkdown(url){
     html = simpleMarkdownToHtml(mdText);
   }
 
-  // Insert into page
   $('#about-content').innerHTML = html;
 }
 
-/* Very small, conservative Markdown -> HTML fallback.
-   Supports: headings (#..######), unordered lists (-/*), paragraphs,
-   bold (**text**), italic (*text*), inline code (`code`), links [text](url).
-   This is purposely simple — the real marked parser will be richer if available.
-*/
 function simpleMarkdownToHtml(md){
   const esc = (s) => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
@@ -225,11 +211,10 @@ function simpleMarkdownToHtml(md){
 
     if(line === ''){
       flushList();
-      out += ''; // blank line -> paragraph break handled by spacing below
+      out += '';
       continue;
     }
 
-    // Headings
     const hMatch = line.match(/^(#{1,6})\s+(.*)$/);
     if(hMatch){
       flushList();
@@ -238,7 +223,6 @@ function simpleMarkdownToHtml(md){
       continue;
     }
 
-    // Unordered lists (- or *)
     const ulMatch = line.match(/^[-*]\s+(.*)$/);
     if(ulMatch){
       if(!inList){ inList = true; out += '<ul>'; }
@@ -246,7 +230,6 @@ function simpleMarkdownToHtml(md){
       continue;
     }
 
-    // Normal paragraph
     flushList();
     out += `<p>${inlineFmt(line)}</p>`;
   }
@@ -255,27 +238,19 @@ function simpleMarkdownToHtml(md){
 }
 
 function inlineFmt(text){
-  // escape HTML first
   let s = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
-  // inline code: `code`
   s = s.replace(/`([^`]+)`/g, (m, p1) => `<code>${p1.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code>`);
 
-  // links: [text](url)
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => `<a href="${u}" rel="noopener noreferrer">${t}</a>`);
 
-  // bold: **text**
   s = s.replace(/\*\*([^*]+)\*\*/g, (m, p1) => `<strong>${p1}</strong>`);
 
-  // italic: *text* (naive; doesn't handle nested well)
   s = s.replace(/\*([^*]+)\*/g, (m, p1) => `<em>${p1}</em>`);
 
   return s;
 }
 
-/* ------------------------------
-   Small utility: copyright
-   ------------------------------ */
 function updateCopyright(startYear = 2025) {
   const now = new Date().getFullYear();
   const yearText = now > startYear ? `${startYear}–${now}` : `${startYear}`;
@@ -283,9 +258,6 @@ function updateCopyright(startYear = 2025) {
   el.innerHTML = `&copy; ${yearText} Geno. All Rights Reserved`;
 }
 
-/* ------------------------------
-   Kick off
-   ------------------------------ */
 updateCopyright(2025);
 
 fetchEntries().catch(err=>{

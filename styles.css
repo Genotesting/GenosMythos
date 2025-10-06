@@ -55,7 +55,6 @@ button#back-to-list, button#back-to-list-from-about{
   font-size:0.9rem;
 }
 
-/* About link anchored inside footer (bottom-right) */
 .about-link {
   position: absolute;
   right: 24px;
@@ -71,7 +70,6 @@ button#back-to-list, button#back-to-list-from-about{
   outline: none;
 }
 
-/* Markdown content styling for #about-content */
 .md-content{
   background:var(--card);
   padding:18px;
