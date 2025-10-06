@@ -1,4 +1,5 @@
 const DATA_URL = 'data/entries.json';
+const ABOUT_URL = 'about.md';
 
 let entries = [];
 
@@ -39,9 +40,7 @@ function buildAlphabet(){
   alpha.forEach(letter=>{
     const btn = document.createElement('button');
     btn.textContent = letter;
-    btn.addEventListener('click', ()=> {
-      searchByLetter(letter);
-    });
+    btn.addEventListener('click', ()=> { searchByLetter(letter); });
     el.appendChild(btn);
   });
 }
@@ -67,10 +66,8 @@ function setupEvents(){
   $('#category-filter').addEventListener('change', renderList);
   const back = $('#back-to-list');
   if(back) back.addEventListener('click', ()=> { location.hash = '#/'; });
-
   const backAbout = $('#back-to-list-from-about');
   if(backAbout) backAbout.addEventListener('click', ()=> { location.hash = '#/'; });
-
   window.addEventListener('hashchange', handleRouting);
 }
 
@@ -90,7 +87,6 @@ function renderList(filtered = null){
   const q = $('#search').value.trim().toLowerCase();
   const category = $('#category-filter').value;
   let list = entries.slice();
-
   if(category) list = list.filter(e => e.category === category);
   if(q){
     list = list.filter(e => {
@@ -100,16 +96,13 @@ function renderList(filtered = null){
              (e.tags||[]).join(' ').toLowerCase().includes(q);
     });
   }
-
   list.sort((a,b)=> a.name.localeCompare(b.name));
-
   const container = $('#entry-list');
   container.innerHTML = '';
   if(list.length === 0){
     container.innerHTML = '<li class="entry-card">No matches.</li>';
     return;
   }
-
   for(const e of list){
     const li = document.createElement('li');
     li.className = 'entry-card';
@@ -134,7 +127,6 @@ function renderEntry(id){
   meta.style.color = 'var(--muted)';
   meta.innerHTML = `<strong>Category:</strong> ${escapeHtml(e.category || '')} &nbsp; <strong>Size:</strong> ${escapeHtml(e.size || '')}`;
   $('#entry-content').appendChild(meta);
-
   showEntryView();
 }
 
@@ -171,9 +163,8 @@ async function showAboutView(){
   $('#list-view').classList.add('hidden');
   $('#entry-view').classList.add('hidden');
   $('#about-view').classList.remove('hidden');
-
   try {
-    await loadAboutMarkdown('/about.md');
+    await loadAboutMarkdown(ABOUT_URL);
   } catch(err){
     $('#about-content').innerHTML = `<p style="color:tomato">Error loading About content: ${escapeHtml(err.message)}</p>`;
   }
@@ -183,53 +174,28 @@ async function loadAboutMarkdown(url){
   const res = await fetch(url);
   if(!res.ok) throw new Error('Failed to load about.md');
   const mdText = await res.text();
-
   let html = '';
   if(window.marked && typeof window.marked.parse === 'function'){
     html = window.marked.parse(mdText);
   } else {
     html = simpleMarkdownToHtml(mdText);
   }
-
   $('#about-content').innerHTML = html;
 }
 
 function simpleMarkdownToHtml(md){
   const esc = (s) => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-
   const lines = md.replace(/\r/g, '').split('\n');
-
   let out = '';
   let inList = false;
-
-  function flushList(){
-    if(inList){ out += '</ul>'; inList = false; }
-  }
-
+  function flushList(){ if(inList){ out += '</ul>'; inList = false; } }
   for(let raw of lines){
     const line = raw.trim();
-
-    if(line === ''){
-      flushList();
-      out += '';
-      continue;
-    }
-
+    if(line === ''){ flushList(); out += ''; continue; }
     const hMatch = line.match(/^(#{1,6})\s+(.*)$/);
-    if(hMatch){
-      flushList();
-      const level = hMatch[1].length;
-      out += `<h${level}>${inlineFmt(hMatch[2])}</h${level}>`;
-      continue;
-    }
-
+    if(hMatch){ flushList(); const level = hMatch[1].length; out += `<h${level}>${inlineFmt(hMatch[2])}</h${level}>`; continue; }
     const ulMatch = line.match(/^[-*]\s+(.*)$/);
-    if(ulMatch){
-      if(!inList){ inList = true; out += '<ul>'; }
-      out += `<li>${inlineFmt(ulMatch[1])}</li>`;
-      continue;
-    }
-
+    if(ulMatch){ if(!inList){ inList = true; out += '<ul>'; } out += `<li>${inlineFmt(ulMatch[1])}</li>`; continue; }
     flushList();
     out += `<p>${inlineFmt(line)}</p>`;
   }
@@ -239,15 +205,10 @@ function simpleMarkdownToHtml(md){
 
 function inlineFmt(text){
   let s = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-
   s = s.replace(/`([^`]+)`/g, (m, p1) => `<code>${p1.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code>`);
-
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (m, t, u) => `<a href="${u}" rel="noopener noreferrer">${t}</a>`);
-
   s = s.replace(/\*\*([^*]+)\*\*/g, (m, p1) => `<strong>${p1}</strong>`);
-
   s = s.replace(/\*([^*]+)\*/g, (m, p1) => `<em>${p1}</em>`);
-
   return s;
 }
 
