@@ -281,10 +281,10 @@ button#back-to-list, button#back-to-list-from-about{
   background: rgba(255,255,255,0.03);
   font-size: 0.8rem;
   color: var(--muted);
-  border: 1px solid rgba(143, 143, 157, 1); /* fallback */
-  border-top-color: rgba(143, 143, 157, 1);    /* top/left */
+  border: 1px solid rgba(143, 143, 157, 1);
+  border-top-color: rgba(143, 143, 157, 1);
   border-left-color: rgba(143, 143, 157, 1);
-  border-bottom-color: rgba(95, 95, 105, 1);   /* bottom/right */
+  border-bottom-color: rgba(95, 95, 105, 1);
   border-right-color: rgba(95, 95, 105, 1);
   cursor: pointer;
   transition: background 0.18s, color 0.18s, border-color 0.18s;
@@ -297,6 +297,7 @@ button#back-to-list, button#back-to-list-from-about{
   color: var(--text);
 }
 #tag-list {
-  max-height: 220px;   /* or whatever height fits your design */
+  max-height: 220px;
   overflow-y: auto;
+
 }
