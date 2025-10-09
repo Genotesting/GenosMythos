@@ -5,48 +5,73 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Geno's Mythos</title>
 
+  <meta name="description" content="Geno's Mythos" />
+  <meta property="og:title" content="Geno's Mythos" />
+  <meta property="og:description" content="Indexed entries" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Geno's Mythos" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 <body>
+  <div id="loading" aria-hidden="true" class="loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <span class="loading-text">Loading…</span>
+  </div>
+
   <header class="site-header">
-    <h1 id="site-title">Geno's Mythos</h1>
-    <div class="controls">
-      <input id="search" placeholder="Search entries..." aria-label="Search entries">
+    <div class="left-header">
+      <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false">☰</button>
+      <img src="logo.png" alt="Logo and official favicon coming soon! I hope.." class="site-logo" />
+      <h1 id="site-title">Geno's Mythos</h1>
+    </div>
+
+    <div class="controls" role="search" aria-label="Search and filter">
+      <input id="search" placeholder="Search entries..." aria-label="Search entries" />
       <select id="category-filter" aria-label="Filter by category">
         <option value="">All categories</option>
       </select>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle light/dark theme">🌓</button>
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" id="main" role="main">
     <aside class="sidebar" aria-label="Sidebar">
       <section>
         <h3>Index</h3>
-        <div id="alphabet" aria-hidden="false"></div>
+        <div id="alphabet" tabindex="0"></div>
       </section>
       <section>
         <h3>Tags</h3>
-        <div id="tag-list"></div>
+        <div id="tag-list" aria-label="Tag list"></div>
       </section>
     </aside>
 
     <section class="content">
-      <div id="list-view" class="view">
-        <h2>Entries</h2>
-        <ul id="entry-list" aria-live="polite"></ul>
+      <div id="message" role="status" aria-live="polite" class="message" hidden></div>
+
+      <div id="list-view" class="view" role="region" aria-labelledby="site-title">
+        <h2 class="visually-hidden">Entries</h2>
+        <ul id="entry-list" aria-live="polite" role="list"></ul>
+        <div id="load-more-container" class="load-more-container"></div>
       </div>
 
-      <div id="entry-view" class="view hidden" aria-hidden="true">
-        <button id="back-to-list">← Back</button>
-        <article id="entry-content" tabindex="0"></article>
+      <div id="entry-view" class="view hidden" aria-hidden="true" role="region" aria-labelledby="entry-content-title">
+        <div class="entry-header">
+          <button id="back-to-list" class="back">← Back</button>
+          <div id="entry-fav-container"></div>
+        </div>
+        <article id="entry-content" tabindex="0" class="entry-article" role="article"></article>
       </div>
 
-      <div id="about-view" class="view hidden" aria-hidden="true">
-        <button id="back-to-list-from-about">← Back</button>
-        <article id="about-content" tabindex="0" class="md-content">
-        </article>
+      <div id="about-view" class="view hidden" aria-hidden="true" role="region" aria-labelledby="about-content">
+        <div class="entry-header">
+          <button id="back-to-list-from-about" class="back">← Back</button>
+        </div>
+        <article id="about-content" tabindex="0" class="md-content"></article>
       </div>
     </section>
   </main>
@@ -54,9 +79,29 @@
   <footer class="site-footer">
     <small id="copyright"></small>
     <a href="#/about" class="about-link" id="about-link">About Me</a>
+    <a href="https://github.com/Genotesting/GenosMythos/issues" class="github-link" target="_blank" rel="noopener noreferrer">Report Issue</a>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" integrity="" crossorigin="anonymous"></script>
+  <noscript>
+    <div class="no-js-warning" role="alert">
+      This site requires JavaScript to function properly. Please enable JavaScript or view the README/about files directly in your repository.
+    </div>
+  </noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" crossorigin="anonymous"></script>
+  <script>
+    (function(){
+      setTimeout(function(){
+        if(!window.marked){
+          var s = document.createElement('script');
+          s.src = 'local-marked.min.js';
+          s.crossOrigin = 'anonymous';
+          document.head.appendChild(s);
+        }
+      }, 600);
+    }());
+  </script>
+
   <script src="scripts.js" type="module"></script>
 </body>
 </html>

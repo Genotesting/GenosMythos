@@ -45,6 +45,8 @@
 - **Changed — Layout & spacing refinements:** header and control paddings adjusted; `.site-logo` constrained; grid and card spacing kept but card sizing and positioning refined for better visual balance.
 - **Changed — Semantic/interactive styling:** inputs, selects and theme-toggle gained transition and pressed states; entries and article areas added role-aligned visual treatments (focusable articles, clearer back-button appearance).
 - **Changed — Code/inline code background:** code block/inline code subtle background adjusted to match the new tokenized color palette.
+- **Changed — Fixed tags not rendering issue:** resolved a layout/CSS conflict that prevented tags from appearing in the sidebar.
+- **Changed — Tags now have the classic, legacy look:** restored the original pill-shaped, dual-outline tag style for a nostalgic appearance.
 
 #### Removed / Replaced
 - **Replaced — Scattered rgba values with variables:** old inline `rgba(255,255,255,0.03)` style values were consolidated into `--border`, `--overlay`, etc., reducing duplicated magic numbers across the stylesheet.
