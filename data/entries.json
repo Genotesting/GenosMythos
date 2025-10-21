@@ -1,15 +1,15 @@
 [
   {
-  "id": "corythrigon",
-  "name": "Corythrigon",
-  "moniker": "The Scourge",
-  "category": "Creature",
-  "summary": "A serpentine pack predator with multiple spiked tails and a dual skeleton.",
-  "size": "20–30 ft",
-  "habitat": "Underground dimly lit caves",
-  "tags": ["serpentine", "pack", "alpha", "regrowth"],
-  "content": "<h1>Corythrigon — <em>The Scourge</em></h1><p><strong>Category:</strong> Creature</p><p><strong>Size:</strong> 20–30 feet</p><p><strong>Habitat:</strong> Underground, dimly lit caves. Lives in packs rather than solitary ambush or stealth.</p><h2>Description</h2><p>The Corythrigon is a serpentine beast with a singular head and multiple powerful tails (commonly 5–6) armed with prongs and spikes. Its name derives from the words <em>Coryth</em>, meaning 'helmet' or 'armored', and <em>rigon</em>, meaning 'drizzle'—a nod to the violent whipping action of its tails, as if the prey is being 'drizzled by whips'. Unlike most snakes, it possesses a rare dual skeleton—an internal bone structure and an external exoskeletal ridge system that provides added durability.</p><h2>Behavior</h2><p>Packs are alpha-led; the alpha is larger with more tails. They don’t ambush indiscriminately — they hunt selectively when motivated. Packs often erupt into violent fights over food. Adults sharpen tails by slamming them against rockfaces and chip stones build nesting material.</p><h2>Abilities & Notes</h2><ul><li>Tails used for constriction and whipping; can rip through metal and tear a car in half in mythic accounts.</li><li>Tail spikes regrow over time like fingernails; lost tails do not regenerate.</li><li>Related conceptually to <a href=\"https://en.wikipedia.org/wiki/Lernaean_Hydra\">hydra</a>/<a href=\"https://en.wikipedia.org/wiki/Anaconda\">anaconda</a> but diverges in social behavior and habitat.</li></ul>"
-},
+    "id": "corythrigon",
+    "name": "Corythrigon",
+    "moniker": "The Scourge",
+    "category": "Creature",
+    "summary": "A serpentine pack predator with multiple spiked tails and a dual skeleton.",
+    "size": "20–30 ft",
+    "habitat": "Underground dimly lit caves",
+    "tags": ["serpentine", "pack", "alpha", "regrowth"],
+    "content": "<h1>Corythrigon — <em>The Scourge</em></h1><p><strong>Category:</strong> Creature</p><p><strong>Size:</strong> 20–30 feet</p><p><strong>Habitat:</strong> Underground, dimly lit caves. Lives in packs rather than solitary ambush or stealth.</p><h2>Description</h2><p>The Corythrigon is a serpentine beast with a singular head and multiple powerful tails (commonly 5–6) armed with prongs and spikes. Its name derives from the words <em>Coryth</em>, meaning 'helmet' or 'armored', and <em>rigon</em>, meaning 'drizzle'—a nod to the violent whipping action of its tails, as if the prey is being 'drizzled by whips'. Unlike most snakes, it possesses a rare dual skeleton—an internal bone structure and an external exoskeletal ridge system that provides added durability.</p><h2>Behavior</h2><p>Packs are alpha-led; the alpha is larger with more tails. They don’t ambush indiscriminately — they hunt selectively when motivated. Packs often erupt into violent fights over food. Adults sharpen tails by slamming them against rockfaces and chip stones build nesting material.</p><h2>Abilities & Notes</h2><ul><li>Tails used for constriction and whipping; can rip through metal and tear a car in half in mythic accounts.</li><li>Tail spikes regrow over time like fingernails; lost tails do not regenerate.</li><li>Related conceptually to <a href=\"https://en.wikipedia.org/wiki/Lernaean_Hydra\">hydra</a>/<a href=\"https://en.wikipedia.org/wiki/Anaconda\">anaconda</a> but diverges in social behavior and habitat.</li></ul>"
+  },
   {
     "id": "zorvathos",
     "name": "Zorvathos",
@@ -55,25 +55,58 @@
     "content": "<h1>Abraxoth — <em>The Celestial Whale</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Domain:</strong> The Fifth Dimension / Intergalactic Space</p><p><strong>Size:</strong> Unknown (observed individuals range from planetary to galactic scale)</p><h2>Description</h2><p>Abraxoth drifts silently through the void, a colossal whale-like cosmic entity of ethereal space dust and nebulae, pulsing softly with celestial energy. It is passive, nomadic, and non-hostile, existing beyond mortal comprehension.</p><h2>Cultural Significance</h2><ul><li><strong>The Fortune Bringers:</strong> Civilizations worship Abraxoth, predicting its path for divine favor.</li></ul>"
   },
   {
-  "id": "myrindyr",
-  "name": "Myrindyr",
-  "moniker": "Ophis Planivorus",
-  "category": "Cosmic Entity",
-  "summary": "A colossal planivorous serpent that drifts through space, consuming planets and metallic debris with magnetic precision.",
-  "size": "12,000 km long, 3,000 km wide",
-  "habitat": "Interstellar voids, near asteroid belts and metallic planets",
-  "tags": ["serpentine", "cosmic", "nomadic", "passive", "magnetic"],
-  "content": "<h1>Myrindyr — <em>Ophis Planivorus</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Size:</strong> 12,000 km long, 3,000 km wide</p><p><strong>Habitat:</strong> Interstellar voids, drifting near asteroid belts and metallic planets. Myrindyr is largely nomadic, moving passively through space while harvesting cosmic debris.</p><h2>Description</h2><p>Myrindyr is a serpentine cosmic entity with dark charcoal scales subtly highlighted with iridescent cobalt, emerald, and bronze tones. Its ventral side is smooth, enabling efficient guidance of smaller debris, while its beak is metallic-toned and emits a faint shimmer when activating its magnetic field. It possesses long, chisel-shaped fangs capable of breaking planetary crusts, with secondary serrated teeth for gripping smaller objects. Eyes are minimal; its primary senses detect electromagnetic and infrared signals from celestial bodies.</p><h2>Behavior</h2><p>This passive planivorous serpent does not expend energy on consuming objects it cannot easily process. When encountering large metallic planets, it uses its controllable magnetic beak to attract chunks without crushing itself. It digests planetary mass slowly, converting it into energy to sustain its immense size. Myrindyr drifts with gravitational currents, conserving energy while interacting minimally with its environment.</p><h2>Abilities & Notes</h2><ul><li>Magnetic beak can be toggled on or off to attract or release metallic objects.</li><li>Chisel-shaped fangs allow extraction of planetary chunks when full swallowing is impossible.</li><li>Scales shift subtly with starlight for camouflage in deep space.</li><li>Passive nature avoids conflict; prioritizes efficiency over predation.</li><li>Its name comes from Myr 'Scaled' and indyr 'In outside'.</li></ul>"
+    "id": "myrindyr",
+    "name": "Myrindyr",
+    "moniker": "Ophis Planivorus",
+    "category": "Cosmic Entity",
+    "summary": "A colossal planivorous serpent that drifts through space, consuming planets and metallic debris with magnetic precision.",
+    "size": "12,000 km long, 3,000 km wide",
+    "habitat": "Interstellar voids, near asteroid belts and metallic planets",
+    "tags": ["serpentine", "cosmic", "nomadic", "passive", "magnetic"],
+    "content": "<h1>Myrindyr — <em>Ophis Planivorus</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Size:</strong> 12,000 km long, 3,000 km wide</p><p><strong>Habitat:</strong> Interstellar voids, drifting near asteroid belts and metallic planets. Myrindyr is largely nomadic, moving passively through space while harvesting cosmic debris.</p><h2>Description</h2><p>Myrindyr is a serpentine cosmic entity with dark charcoal scales subtly highlighted with iridescent cobalt, emerald, and bronze tones. Its ventral side is smooth, enabling efficient guidance of smaller debris, while its beak is metallic-toned and emits a faint shimmer when activating its magnetic field. It possesses long, chisel-shaped fangs capable of breaking planetary crusts, with secondary serrated teeth for gripping smaller objects. Eyes are minimal; its primary senses detect electromagnetic and infrared signals from celestial bodies.</p><h2>Behavior</h2><p>This passive planivorous serpent does not expend energy on consuming objects it cannot easily process. When encountering large metallic planets, it uses its controllable magnetic beak to attract chunks without crushing itself. It digests planetary mass slowly, converting it into energy to sustain its immense size. Myrindyr drifts with gravitational currents, conserving energy while interacting minimally with its environment.</p><h2>Abilities & Notes</h2><ul><li>Magnetic beak can be toggled on or off to attract or release metallic objects.</li><li>Chisel-shaped fangs allow extraction of planetary chunks when full swallowing is impossible.</li><li>Scales shift subtly with starlight for camouflage in deep space.</li><li>Passive nature avoids conflict; prioritizes efficiency over predation.</li><li>Its name comes from Myr 'Scaled' and indyr 'In outside'.</li></ul>"
+  },
+  {
+    "id": "grohnne",
+    "name": "Grohnne",
+    "moniker": "Language of Old",
+    "category": "Culture",
+    "summary": "An ancient language of the lost Grohn civilization, partially undeciphered.",
+    "size": "Not applicable",
+    "origin": "The Grohn civilization",
+    "tags": ["language", "ancient", "culture", "mythology", "symbolic"],
+    "content": "<h1>Grohnne — <em>Language of Old</em></h1><p><strong>Category:</strong> Culture / Language</p><p><strong>Size:</strong> Not Applicable</p><p><strong>Origin:</strong> The Grohn civilization</p><h2>Description</h2><p>Grohnne is the language of the long-lost Grohn people. Much of it remains undeciphered, but surviving texts show a structured and symbolic language, likely used in everyday life, rituals, and storytelling.</p><h2>Mythology</h2><p>The Grohn people followed simple religious beliefs. Dor, the Goddess of Life, represented the cycle of life. Myrdor, Dragon of Fertility, was linked to childbirth and crops. Zixyan, Fiery Bird of the Immortal, helped spirits pass to the afterlife.</p><h2>Language Notes / Examples</h2><ul><li>Grohnne names and words are highly modular. Individual components have meanings that can combine creatively to form names or concepts.</li><li>For example, 'Dor' is a simple name connected to fertility, while 'Ae' means 'water' (pronounced 'ah'). Together, they could form a compound like 'Dorae', which might signify 'flowing fertility'.</li><li>Another example: the name 'Zixyan' and the phrase 'Zix Yan' demonstrate how spacing changes interpretation. Separately, 'Z' = fire, 'Ix' = feathered or bird-like, 'Yan' = undead or immortal. Together as 'Zixyan', the name represents the Fiery Bird of the Immortal, literally translating to 'emberfeathered souls of the undead'.</li><li>This system allows speakers to construct meaningful words and names flexibly, giving both literal and symbolic interpretations depending on context.</li><li>Learning the rules of combination is key to understanding the nuances of the language.</li></ul>"
+  },
+  {
+  "id": "zixyan",
+  "name": "Zixyan",
+  "moniker": "The Immortal Fiery Bird",
+  "category": "Mythical Creature",
+  "summary": "An immortal fiery bird worshipped by the ancient Grohn, bringing good luck; its fallen feathers turn to ashes.",
+  "size": "Variable",
+  "habitat": "Ancient Grohn regions",
+  "tags": ["fire", "mythical", "bird", "immortal", "auspicious", "spiritual"],
+  "content": "<h1>Zixyan — <em>The Immortal Fiery Bird</em></h1><p><strong>Category:</strong> Mythical Creature</p><p><strong>Size:</strong> Variable</p><p><strong>Habitat:</strong> Ancient Grohn regions</p><h2>Description</h2><p>Zixyan is an immortal fiery bird revered by the people of ancient Grohn. Witnessing it is said to bring fortune and blessings. Its vibrant feathers blaze with eternal flame, and when they fall, they turn to ashes that rain down, symbolizing both endings and new beginnings.</p><h2>Behavior</h2><p>Zixyan is rarely seen and moves in long, radiant arcs across the skies. It is believed to appear during times of great change or significant spiritual events, often guiding lost souls or blessing individuals with inspiration and resilience. The bird is said to have a deep connection with the natural and spiritual world, harmonizing fire, life, and the afterlife.</p><h2>Cultural Significance</h2><p>In Grohnne mythology, Zixyan is a symbol of immortality, renewal, and divine favor. Temples and shrines were built in its honor, and festivals celebrated its appearances, often involving rituals with ash-feathers collected for blessings, divination, or protective charms.</p>"
 },
-{
-  "id": "grohnne",
-  "name": "Grohnne",
-  "moniker": "Language of Old",
-  "category": "Culture",
-  "summary": "An ancient language of the lost Grohn civilization, partially undeciphered.",
-  "size": "Not applicable",
-  "origin": "The Grohn civilization",
-  "tags": ["language", "ancient", "culture", "mythology", "symbolic"],
-  "content": "<h1>Grohnne — <em>Language of Old</em></h1><p><strong>Category:</strong> Culture / Language</p><p><strong>Size:</strong> Not Applicable</p><p><strong>Origin:</strong> The Grohn civilization</p><h2>Description</h2><p>Grohnne is the language of the long-lost Grohn people. Much of it remains undeciphered, but surviving texts show a structured and symbolic language, likely used in everyday life, rituals, and storytelling.</p><h2>Mythology</h2><p>The Grohn people followed simple religious beliefs. Dor, the Goddess of Life, represented the cycle of life. Myrdor, Dragon of Fertility, was linked to childbirth and crops. Zixyan, Phoenix of the Immortal, helped spirits pass to the afterlife.</p><h2>Language Notes / Examples</h2><ul><li>Grohnne names and words are highly modular. Individual components have meanings that can combine creatively to form names or concepts.</li><li>For example, 'Dor' is a simple name connected to fertility, while 'Ae' means 'water' (pronounced 'ah'). Together, they could form a compound like 'Dorae', which might signify 'flowing fertility'.</li><li>Another example: the name 'Zixyan' and the phrase 'Zix Yan' demonstrate how spacing changes interpretation. Separately, 'Z' = fire, 'Ix' = feathered or bird-like, 'Yan' = undead or immortal. Together as 'Zixyan', the name represents the Phoenix of the Immortal, literally translating to 'emberfeathered souls of the undead'.</li><li>This system allows speakers to construct meaningful words and names flexibly, giving both literal and symbolic interpretations depending on context.</li><li>Learning the rules of combination is key to understanding the nuances of the language.</li></ul>"
-}
+  {
+  "id": "the_mist",
+  "name": "The Mist",
+  "moniker": "Embodiment of Omnipresence",
+  "category": "Cosmic Phenomenon",
+  "summary": "The Mist is omnipresent, visible under certain conditions as fog; it subtly interacts with the environment, hinting at a vast cosmic presence.",
+  "size": "Infinite / Ubiquitous",
+  "habitat": "Everywhere",
+  "tags": ["cosmic", "omnipresence", "phenomenon", "fog", "ethereal"],
+  "content": "<h1>The Mist — <em>Embodiment of Omnipresence</em></h1><p><strong>Category:</strong> Cosmic Phenomenon</p><p><strong>Size:</strong> Infinite / Ubiquitous</p><p><strong>Habitat:</strong> Everywhere</p><h2>Description</h2><p>The Mist is the cosmic embodiment of omnipresence, existing simultaneously in all places. Under suitable conditions, it manifests as visible fog, drifting across landscapes, oceans, and cities. Its movements are imperceptible yet constant, subtly affecting temperature, humidity, and perception.</p><h2>Behavior</h2><p>The Mist has no will of its own but responds to environmental and cosmic patterns. Observers often feel a sense of presence or unease when it appears, though it causes no direct harm. Myths suggest that The Mist can reveal glimpses of other dimensions or hidden truths when conditions align perfectly, though such moments are fleeting and rarely understood.</p><h2>Cultural Significance</h2><p>Civilizations often associated The Mist with spirits, omens, or divine guardianship. Some believed it carried messages from gods or ancestors, while others used fog as a metaphor for the unseen and unknowable nature of the universe. Scientific studies frequently misinterpret its manifestations as weather phenomena, unaware of its true, omnipresent essence.</p>"
+},
+  {
+    "id": "sephal",
+    "name": "Sephal",
+    "moniker": "The Apairipede",
+    "category": "Cosmic Entity",
+    "summary": "A gigantic centipede embodiment of omniscience, with infinite legs and eyes on every segment except the head and tail.",
+    "size": "Gigantic / Multidimensional",
+    "habitat": "Variable, capable of atomic traversal",
+    "tags": ["centipede", "cosmic", "omniscient", "apairipede", "multidimensional", "eyes"],
+    "content": "<h1>Sephal — <em>The Apairipede</em></h1><p><strong>Category:</strong> Cosmic Entity</p><p><strong>Size:</strong> Gigantic / Multidimensional</p><p><strong>Habitat:</strong> Variable; capable of walking on atomic scale</p><h2>Description</h2><p>Sephal, known as the Apairipede, embodies omniscience. It is a colossal centipede-like entity, with each segment (except head and tail) encircled by rings of eyes, each eye containing its own independent brain. Its head lacks eyes but possesses two mandibles capable of opening rifts to pocket dimensions. Using its vast number of appendages, Sephal can move at atomic scales, essentially crawling through reality itself.</p><h2>Neuroscience & Physiology</h2><p>Sephal's total measured neurons are approximately 2.4 × 10^14, vastly exceeding the count in ordinary centipedes. Its eyes operate independently without conflict, enabling simultaneous observation and thought across all segments.</p><h2>Perception & Interaction</h2><p>Encountering Sephal has no meaningful effect on observers; it perceives everything, but what it sees does not directly impact the observer. Its existence challenges comprehension of consciousness, observation, and the scale of sentience.</p>"
+  }
 ]
