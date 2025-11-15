@@ -560,7 +560,6 @@ button:focus-visible, .tag:focus-visible, .fav-button:focus-visible {
   border: 2px solid transparent;
 }
 
-/* Mobile-specific styles */
 @media (max-width: 600px) {
   body {
     padding-top: 0;

@@ -240,6 +240,7 @@ function setupEvents() {
     visibleCount = PAGE_SIZE;
     renderList();
   }, 180));
+
   const cf = $('#category-filter');
   if (cf) cf.addEventListener('change', () => {
     clearTagPressed();
@@ -247,23 +248,66 @@ function setupEvents() {
     visibleCount = PAGE_SIZE;
     renderList();
   });
+
   const back = $('#back-to-list');
   if (back) back.addEventListener('click', () => { location.hash = '#/'; });
+
   const backAbout = $('#back-to-list-from-about');
   if (backAbout) backAbout.addEventListener('click', () => { location.hash = '#/'; });
+
   window.addEventListener('hashchange', handleRouting);
 
   $('#theme-toggle')?.addEventListener('click', () => toggleTheme());
 
-  $('#sidebar-toggle')?.addEventListener('click', () => {
+  $('#sidebar-toggle')?.addEventListener('click', (ev) => {
     const sb = document.querySelector('.sidebar');
     if (!sb) return;
     sb.classList.toggle('active');
     const expanded = sb.classList.contains('active');
     $('#sidebar-toggle')?.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     if (expanded) {
-      const firstButton = sb.querySelector('button');
+      const firstButton = sb.querySelector('button, a, [tabindex]:not([tabindex="-1"])');
       if (firstButton) firstButton.focus();
+    }
+    ev.stopPropagation();
+  });
+
+  document.addEventListener('click', (ev) => {
+    const sb = document.querySelector('.sidebar');
+    const toggle = document.getElementById('sidebar-toggle');
+    if (!sb || !toggle) return;
+    if (!sb.classList.contains('active')) return;
+
+    const target = ev.target;
+    if (target.closest('.sidebar') || target.closest('#sidebar-toggle')) return;
+
+    sb.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  }, { passive: true });
+
+  document.addEventListener('touchstart', (ev) => {
+    const sb = document.querySelector('.sidebar');
+    const toggle = document.getElementById('sidebar-toggle');
+    if (!sb || !toggle) return;
+    if (!sb.classList.contains('active')) return;
+
+    const target = ev.target;
+    if (target.closest('.sidebar') || target.closest('#sidebar-toggle')) return;
+
+    sb.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  }, { passive: true });
+
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Escape' || ev.key === 'Esc') {
+      const sb = document.querySelector('.sidebar');
+      const toggle = document.getElementById('sidebar-toggle');
+      if (!sb || !toggle) return;
+      if (sb.classList.contains('active')) {
+        sb.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
     }
   });
 }
