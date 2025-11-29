@@ -33,6 +33,12 @@
   --gradient2: #ad6543;
 }
 
+hr {
+  background-color:white;
+  margin:0 0 45px 0;
+  max-width:600px;
+  border-width:0;
+}
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -440,8 +446,9 @@ button:focus-visible, .tag:focus-visible, .fav-button:focus-visible {
   border-radius: 6px;
   border: 1px solid var(--border);
   background: transparent;
+  color: var(--text);
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, color var(--transition-speed);
 }
 .sidebar-toggle:hover {
   transform: translateY(-2px);
@@ -558,6 +565,12 @@ button:focus-visible, .tag:focus-visible, .fav-button:focus-visible {
   border-radius: 999px;
   background: rgba(255,255,255,0.05);
   border: 2px solid transparent;
+}
+
+hr.s9 {
+  height:6px;
+  border-top:2px solid black;
+  border-bottom:2px solid black;
 }
 
 @media (max-width: 600px) {
